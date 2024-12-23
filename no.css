@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins';
+    
+    
+}
+
+header {
+    margin-top: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: transparent;
+    filter: drop-shadow(9px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 3rem;
+    color: rgb(255, 87, 75);
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+#linecard{
+  justify-content: space-evenly;
+    display: flex;
+    justify-content: center;
+    margin: 19em;
+ position:fixed;
+}
+.card-img-top{
+    height:150x;
+    width:180.px;
+}
+#buy{
+    display:inline-block;
+     border-radius: 5px;
+    padding: 10px 20px;
+    font-size:16px;
+    text-decoration: none;
+    cursor:pointer;
+    border:none;
+    background-color: #0056b3;
+    color:#fff;
+
+}
+.card-img-top:hover{
+    background-color:#0056b3;
+}
+.card-link{
+    display:inline-block;
+    border-radius: 5px;
+   padding: 10px 20px;
+   font-size:16px;
+   text-decoration: none;
+   cursor:pointer;
+   border:none;
+   background-color: #0056b3;
+   color:#fff;
+   margin-top: 7px;
+
+}

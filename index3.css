@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins%3Awght%40100%3B200%3B300%3B400%3B500%3B600&display=swap%27%29%3B');
+*{
+      /* must to do  */
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}  
+/* its body code one which is benith header or nav bar    */
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("pink_anime_wallpaper_nature_by_xrebelyellx_dgnwwhh-fullview.jpg");
+background-size: cover; 
+/* cover cover whole body at image avoid picture repeation   */
+background-position: center;
+
+}
+
+
+/* startes  here   */
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+
+    padding:20px 100px;
+ /* first here was a backgroung color which i used fotr code to do it
+  smooth without confusion later i remove it as i dont need it now so 
+  we can do so to insure a better code understandable for me    */
+   
+    display: flex;
+    /* it make two diff h tag in same div to add space btw them    */
+    justify-content: space-between;
+    align-items: center;
+    z-index:99%;
+    
+
+    
+
+}
+.logo{
+font-size:2.4rem;
+color:rgb(255, 255, 255);
+user-select:none;
+
+}
+
+.navigator a{
+
+    /* try to use relative as best   */
+position:relative;
+font-size: 1.1rem;
+
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+color:rgb(255, 255, 255);
+ /* text decoration gives underline color   */
+text-decoration:none; 
+font-weight:400px;
+/* margin give space between btw any div or text  we can even give margin using position like top asnd left   */
+margin-left :40px;
+}
+.navigator a::after{
+    content: '';
+    /* we will use [position f lines as absolute because it will lead to form line small at at required postion   */
+    position:absolute;
+
+    right:0;
+      /* it make line come bottom of text    */
+    bottom:-4px;
+    /* width decide length of line formed   */
+    width:100%;
+    /* height decide thickness of line   */
+    height: 2px;
+    background: rgb(255, 255, 255);
+    border-radius: 4px;
+transform-origin:left;
+    /* transform:scaleX(0)  this line made line show as transformation after we use hover in that text  like this    */
+    transform:scaleX(0);
+    transition: transform .3s;
+
+} 
+
+
+/* after making transform and transition make a hover for it and also write same code in that also so never do same mistake  */
+.navigator a:hover::after{
+    /* here scale 1 make dissapeaper line again  by same lenght given if i do 2 it will show line 2x times   */
+    transform:scaleX(1);
+}
+
+    /* if any css code not work like shifting ing so use both id and class  */
+
+#signin{
+    width:100px;
+    height:50px;
+
+      /* transparenmt allow below backgroung color to show   */
+    background-color:transparent;
+
+    border: 2px solid rgb(232, 232, 232);
+
+     /* cursor allow a ciursor to show over any text or anything thoughout the program   */
+   
+ outline:none;
+ /* border radius dicid3e shape of box or container   like  */
+    border-radius:170px;
+    cursor:pointer;
+    font-size: 1.2rem;
+    color:white;
+    /* to make sign in button to shift    */
+    font-weight: 500px;
+    margin-left: 40px;
+    transition: .6s;
+
+}
+/* making change during hover in sign up box   */
+#signin:hover{
+    background-color:rgb(236, 236, 236);
+color:black;
+}
+
+/* all rember do first which is important l;ike here i first made header and then i fixed position of features like logo home
+  sign up  hover later i add picture and move futhjuer   v  */
+
+  .wrapper{
+    position:relative;
+    width:400px;
+    height:450px;
+    background-color: transparent;
+    border:.1px solid rgb(249, 162, 207);
+    color:rgb(5, 4, 0);
+    border-radius:17px;
+    /* backdrop-filter is to make blur things   */
+    backdrop-filter: blur(8px);
+     /* this box-shadow addes border shadow    */
+    box-shadow:0 0 35px rgb(249, 162, 207);
+    display:flex;
+    justify-content:center;
+    align-items: center;
+  }
+ /* for making login detail option text come at disired position   */
+.wrapper {
+    
+    padding:40px;
+  }
+  /* to maKE TEXT INSIDE LOGIN AS I WANT   */
+  .form-boxlogininfo h2{
+font-size: 2em;
+color:rgb(39, 25, 21);
+text-align: center;
+
+  }
+  /* NOW MAKING CHANGES IN BOX LIKE PAssword or email.box   */
+  .input-box{
+    position:relative;
+    width:100%;
+    height: 70px;
+    border-bottom:1.6px solid rgb(41, 4, 4);
+    margin:20px 0;
+
+  }
+   /* now its time for label inprovement .....   */
+   .input-box label{
+    
+    position:absolute;
+    /* making label shift    */
+    top:80%;
+    left:4px;
+    transform:translateY(-70%);
+    font-size: 1em;
+    color:rgb(48, 19, 19);
+    font-weight:500;
+    pointer-events:none;
+    transition: .6s;
+
+
+   }
+
+   .input-box input:focus~label,
+   .input-box input:valid~label{
+    top:-5px;
+   }
+
+       
+   
+
+   .input-box input{
+    
+    /* input are here words like email and password    */
+    /* first i made email and pass input box later i increase its size and made it disaapaper    */
+
+ width:100%;
+ height:90%;
+ background: transparent;
+ border:none;
+ outline:none;
+   }
+   .input-box.icon{
+    position: absolute;
+    
+   
+    font-size:1.3px;
+    color:black;
+    line-height:60px;
+   }
+   
+
+   #btnn{
+    text-align: center;
+    width: 100%;
+    height:30px;
+    background-color: #f9f9f9;
+    text-decoration: none;
+    border-radius: 25%;
+   padding: 10px 15px ;
+   font-size:1.1rem;
+   cursor:pointer;
+   border:none;
+   outline: none;
+   color:#131313;
+   justify-content: center;
+   align-items:center;
+   margin:5rem;
+   transition: 0.3s ease-in ;
+
+}
+#btnn:hover{
+  /* transform:scale(0.4) translateX(-1px);
+  color:white;
+  background-color: rgb(0, 119, 237); */
+  max-width:10rem;
+  height:3rem;
+  color:black;
+  transform: scale(1.5) translateY(-7px);
+ 
+  box-shadow:0 0 26px #ffc2e9;
+}

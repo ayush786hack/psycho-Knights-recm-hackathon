@@ -1,0 +1,74 @@
+*{
+    margin:0;
+    padding:0;
+ 
+    font-family:  'Lucida Sans', Arial, sans-serif;
+
+}
+
+.box{
+    
+    background-image: url("anime-background-wallpaper-Anime-Wallpapers-sky-ciel.png");
+    background-size: cover;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    
+min-height: 100vh;
+
+   
+  
+}
+
+    
+
+.wrapper{
+    background-image: url("anime-background-wallpaper-Anime-Wallpapers-sky-ciel.png");
+    background-size: cover;
+    position:relative;
+    width:350px;
+    height:500px;
+    
+    border:.1px solid rgb(237, 237, 226);
+    color:rgb(5, 4, 0);
+    border-radius:20%;
+    /* backdrop-filter is to make blur things   */
+    
+   
+     /* this box-shadow addes border shadow    */
+    box-shadow:0 0 35px rgb(255, 255, 255);
+   
+   text-align:center;
+  
+   
+}
+
+
+    /* display:flex;
+    justify-content: center;
+    align-items:center;
+    min-height: 100vh;
+   
+    background-image: url(anime-forest-znulspo5293c938u.jpg );
+    opacity:0.6"
+ */
+ h2{
+  margin:5rem;
+  color: rgb(255, 1, 124);
+  font-size:1.9rem;
+  cursor:pointer;
+ }
+ .mem{
+    font-size:1.1rem;
+    color:rgb(0, 0, 0);
+    margin-top:5rem;
+    top:-5rem;
+    cursor:pointer;
+   
+ }
+ .succus{
+    font-size:1.1rem;
+    color:rgb(0, 0, 0);
+    cursor:pointer;
+ }
+ 
